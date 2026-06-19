@@ -53,7 +53,7 @@ So sleepwork isn't reinventing scheduling — it's a thin convenience layer over
 ## Install
 
 ```
-/plugin marketplace add <your-github-username>/sleepwork-plugin
+/plugin marketplace add leechild4/sleepwork-plugin
 /plugin install sleepwork
 ```
 
@@ -83,4 +83,4 @@ skills/sleepwork/
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+Free for personal, non-commercial use only — see [LICENSE](LICENSE).

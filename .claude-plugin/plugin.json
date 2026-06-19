@@ -3,8 +3,8 @@
   "description": "Schedule a Claude Code task to run unattended and headless on your own Mac at a set time (e.g. overnight) via a self-cleaning launchd one-shot. Full local file access, subscription billing, no permission prompts.",
   "version": "1.0.0",
   "author": {
-    "name": "<your-name>"
+    "name": "Ben Gill"
   },
-  "homepage": "https://github.com/<your-github-username>/sleepwork-plugin",
+  "homepage": "https://github.com/leechild4/sleepwork-plugin",
   "keywords": ["scheduling", "launchd", "headless", "unattended", "overnight", "automation", "macos"]
 }

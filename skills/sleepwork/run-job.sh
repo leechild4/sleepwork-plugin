@@ -49,7 +49,10 @@ cd "$WORKDIR" || { echo "$(date) — cannot cd to $WORKDIR" >> "$LOG"; touch "$M
 
 echo "==== sleepwork '$LABEL' start: $(date) (model $MODEL, wd $WORKDIR) ====" >> "$LOG"
 
-cat "$BRIEF" | "$CLAUDE" -p \
+# caffeinate -i holds off idle system sleep for the lifetime of this run, so an
+# overnight job started while the Mac is idle isn't suspended mid-task. The
+# assertion releases automatically when claude exits.
+cat "$BRIEF" | /usr/bin/caffeinate -i "$CLAUDE" -p \
   --model "$MODEL" \
   --permission-mode bypassPermissions \
   --output-format stream-json \

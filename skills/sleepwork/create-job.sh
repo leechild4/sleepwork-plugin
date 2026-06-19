@@ -16,6 +16,7 @@ brief_src="${6:?brief source path required}"
 [[ -f "$brief_src" ]]  || { echo "ERROR: brief not found: $brief_src"; exit 1; }
 (( hour >= 0 && hour <= 23 ))   || { echo "ERROR: hour out of range: $hour"; exit 1; }
 (( minute >= 0 && minute <= 59 ))|| { echo "ERROR: minute out of range: $minute"; exit 1; }
+command -v claude >/dev/null 2>&1 || { echo "ERROR: claude CLI not found on PATH. Install/locate it before scheduling (the overnight run needs it)."; exit 1; }
 
 label="com.claude.sleepwork-${slug}"
 run_dir="$HOME/.claude/sleepwork/${slug}"

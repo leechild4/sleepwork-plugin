@@ -1,0 +1,13 @@
+{
+  "name": "sleepwork-marketplace",
+  "owner": {
+    "name": "<your-name>"
+  },
+  "plugins": [
+    {
+      "name": "sleepwork",
+      "source": "./",
+      "description": "Schedule a Claude Code task to run unattended and headless on your own Mac at a set time via a self-cleaning launchd one-shot."
+    }
+  ]
+}

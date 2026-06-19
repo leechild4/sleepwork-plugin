@@ -52,12 +52,18 @@ So sleepwork isn't reinventing scheduling — it's a thin convenience layer over
 
 ## Install
 
+One-liner (clones the skill straight into `~/.claude/skills/`):
+
+```bash
+git clone --depth 1 https://github.com/leechild4/sleepwork-plugin /tmp/sleepwork-plugin && cp -r /tmp/sleepwork-plugin/skills/sleepwork ~/.claude/skills/ && chmod +x ~/.claude/skills/sleepwork/*.sh && rm -rf /tmp/sleepwork-plugin
+```
+
+Or install it as a plugin from inside Claude Code:
+
 ```
 /plugin marketplace add leechild4/sleepwork-plugin
 /plugin install sleepwork
 ```
-
-Or copy `skills/sleepwork/` into `~/.claude/skills/` manually — a skill is portable files.
 
 ### One thing to check after install
 
